@@ -1,0 +1,13 @@
+{
+  "name": "foodflow-ordering-system",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter './apps/*' dev",
+    "build": "pnpm --filter backend build && pnpm --filter frontend build",
+    "lint": "pnpm --filter backend lint && pnpm --filter frontend lint",
+    "test": "pnpm --filter backend test && pnpm --filter frontend test",
+    "check": "pnpm lint && pnpm test && pnpm build"
+  }
+}
